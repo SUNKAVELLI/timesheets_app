@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employee_id: 1
+  project_id: 1
+  workdate: 2014-08-28
+  workstart: 2014-08-28 14:46:33
+  workend: 2014-08-28 14:46:33
+  approved: false
+
+two:
+  employee_id: 1
+  project_id: 1
+  workdate: 2014-08-28
+  workstart: 2014-08-28 14:46:33
+  workend: 2014-08-28 14:46:33
+  approved: false

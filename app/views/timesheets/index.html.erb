@@ -1,0 +1,33 @@
+<h1>Listing timesheets</h1>
+
+<table>
+  <tr>
+    <th>Employee</th>
+    <th>Project</th>
+    <th>Workdate</th>
+    <th>Workstart</th>
+    <th>Workend</th>
+    <th>Approved</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @timesheets.each do |timesheet| %>
+  <tr>
+    <td><%= timesheet.employee_id %></td>
+    <td><%= timesheet.project_id %></td>
+    <td><%= timesheet.workdate %></td>
+    <td><%= timesheet.workstart %></td>
+    <td><%= timesheet.workend %></td>
+    <td><%= timesheet.approved %></td>
+    <td><%= link_to 'Show', timesheet %></td>
+    <td><%= link_to 'Edit', edit_timesheet_path(timesheet) %></td>
+    <td><%= link_to 'Destroy', timesheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Timesheet', new_timesheet_path %>

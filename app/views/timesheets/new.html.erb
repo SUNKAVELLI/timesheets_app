@@ -1,0 +1,9 @@
+<h3>Timesheet for <%=@employee.name%></h3>
+<br />
+<div class="row-fluid">
+<div class="span1"></div>
+<div class="span10">
+  <%= render 'form' %>
+</div>
+</div>
+<%= link_to 'Back', timesheets_path %>
